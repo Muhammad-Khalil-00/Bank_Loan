@@ -1,0 +1,253 @@
+                        
+import java.util.Scanner;
+
+
+     class projct2{
+        public static void main (String [] args){
+        Scanner sc = new Scanner ( System.in);
+        int a ,   d, e , g , h  , l ,o ,p ,q,  r , s ,  w   , ab, ac ,ad  ; 
+        char f   , m ;
+        long Cnic ,  i , j , k , n , t , u , v , ag   ; 
+        String name , ae,af ,mob , CNIC,acc , pass  ; 
+
+
+        System.out.println("1 / login ");
+        System.out.println("2 / Signin ");
+         ab = sc.nextInt(); 
+         
+
+        if  (ab ==1  ){
+            System.out.println("Enter Your Account Number  ");
+               ac = sc.nextInt();
+            System.out.println("Enter Your Password  ");
+               ad = sc.nextInt();
+        }else if (ab==2){
+               System.out.println("Enter Your first Name ");
+               ae=sc.next();
+               System.out.println("Enter Your Last Name ");
+               af=sc.next();
+
+               while ((true)){
+                System.out.println("Enter Your Phone Number ");
+                mob=sc.next();
+                   if(mob.length()==11){
+                    break;
+                   }else{
+                    System.out.println("invalid number ");
+                   }
+               }
+             while((true )){
+                System.out.println("Enter Your CNIC ");
+                CNIC=sc.next();
+                if(CNIC.length()==13){
+                break;
+                }else {
+                    System.out.println("invalid CNIC ");
+                }
+             }
+             System.out.println("Enter Your Account ");
+             acc=sc.next();
+             System.out.println("Create A Strong Password ");
+             pass=sc.next();
+             System.out.println("Your Acccount Is Created ON NBP");
+             
+                
+             
+        }
+        
+        System.out.println("WELLCOME TO NATIONAL BANK ");
+        System.out.println("1/Apply for  Highest Loan Intrest");
+        System.out.println("2/Apply for low Intrest Loan");
+        System.out.println("3/Exit the WEBSITE");
+        a = sc.nextInt();
+        if (a==1){
+            System.out.println("Apply for Highest Loan Intrest ");
+            System.out.println("Plz Answer  these Following Questions ");
+            System.out.println("1/Are you Employee on NTIONAL BANK or No // y for yes And N For NO");
+            f =sc.next().charAt(0);
+            if(f=='Y'){
+                System.out.println("CONGRATULATION YOU ARE ELIGIBLE FOR HIGHEST LOAN INTRST (on 10%  DISCOUNT ) ");
+                System.out.println("PLZ Answer These Followiung Questions ");
+           
+                System.out.println("enter our CNIC Without Dashes");
+                Cnic = sc.nextLong();
+                System.out.println("Enter your  Service length ");
+                d = sc.nextInt();
+                if(d>=10){
+                    System.out.println("Enter your Employee No");
+                    e = sc.nextInt();
+                    
+                    
+                                            
+                    
+                    if(e<5500){
+                        System.out.println("Congratulations You Are Eligible Hihest Loan (ON 10% DISCOUNT )");
+                        System.out.println("plz Enter Amount For Loan ");
+                        g = sc.nextInt();
+                        System.out.println("Your Application Has Been Processed ");
+                        System.out.println("Yoou Will Be Called Very Soon ");
+                        System.out.println("THANKYOU Visit our Bank ");
+                        System.out.println("created by MK Malik");
+                    }else{
+                        System.out.println("your employee no is wrong you can  get loan without Discount"  );
+                    }
+                }else {
+                    System.out.println("You Are Not Eligible for Loan 10% Discount PLZ You Can Try Without Discount  ");
+                }
+
+            }else if (f=='N'){
+                System.out.println("WELCOME TO NBP");
+                System.out.println("You Are Eligible For Highest  Loan Without Discount");
+                System.out.println("Your Account On NBP ? // y for yes AND N for NO ");
+                ac = sc.next().charAt(0);
+                if (ac == 'Y'){
+                    System.out.println("Cpngratulations! Are ou Eligible For Loan");
+                }else if (ac=='N'){
+                    System.out.println("Soory YOur Are Not Eligible For Loan Because Your Account is Not Created On NBP");
+                    System.out.println("THANKYOU");
+                }
+                System.out.println("Enter your Age ");
+                h = sc.nextInt();
+                if(h>=18){
+                    System.out.println("Enter your CNIC Number ");
+                    i = sc.nextLong();
+                    System.out.println("Enter Two Surities ");
+                    System.out.println("Surities 1  ( CNIC Number WithOut Dashes   )" );
+                    j = sc.nextLong();
+                    System.out.println("Surities 2  ( CNIC Number WithOut Dashes  )");
+                    k = sc.nextLong();
+                    System.out.println(" You Are Eligible for Highest Loan  ");
+                    System.out.println("Enter The Amount FOR Highest Loan ");
+                    l = sc.nextInt();
+                    System.out.println("YOUR Application Has Been Processed ");
+                    System.out.println("You Will Be Called Very Soon ");
+                    System.out.println("THANKYOU VISIT OUR BANK");
+
+
+
+                }else if (h<18){
+                    System.out.println(" you Are Not Eligible For Highest OR LOW ");
+                    System.out.println("  sorry Age Minimum 18 Required ");
+                    System.out.println("  THANKYOU VISIT OUR BANK ");
+                }
+
+            }
+
+             
+
+
+
+
+
+
+
+
+
+
+
+            }else if (a==2){
+                System.out.println("WELLCOME TO NBP");
+                System.out.println("Apply for Low Intrest Loan ");
+                System.out.println("Are you Employee National Bank Or No // y for Yes And N for NO");
+                m = sc.next().charAt(0);
+                if (m=='Y'){
+                         System.out.println("You Are Apply Low Intrest Loan  (10% Discount )");
+                         System.out.println("Enter your CnNic Number ");
+                         n=sc.nextLong();
+                    
+                    
+                           System.out.println("Enter Your Service Length");
+                           p = sc.nextInt();
+                    if(p>=10){
+                        System.out.println("Enter Your Employee Number");
+                        q = sc.nextInt();
+                        if (q<=5500){
+                            System.out.println("CONGRATULATIONS! You Are Eligible For Low  intrest Loan With 10% DISCOUNT  ");
+                            System.out.println("Enter The Amount For Low Intrest Loan (100k - 500k)");
+                            o = sc.nextInt();
+                            if (o<=500000){
+                                System.out.println("Congratulations! ");
+                                System.out.println("Your Applicaticon Has Been Processed ");
+                                System.out.println("You Will Be Called Very Soon ");
+                                System.out.println("THANKYOU VISIT OUR BANK ");
+                            }else {
+                                System.out.println("Sorry This condition Is Low Intrest Loan ");
+                                System.out.println("You Can Try Highest Intrest Loan ");
+                                System.out.println("THANKYOU VISIT OUR BANK");
+                            }
+
+                        }else {
+                            System.out.println("Your Employee Number is Wrong  ");
+                            System.out.println("PLZ TRY LOW INTREST LOAN WITHOUT DISCOUNT");
+                            System.out.println("THANKYOU VISIT OUR BANK ");
+                        }
+                    }else {
+                        System.out.println("You Ae Not Eligible For Loan With Discount");
+                        System.out.println("plz Try Without Discount");
+                        System.out.println("THANKYOU");
+                    }
+                    
+                } else if (m == 'N'){
+                    System.out.println("You Are Eligible For Low Intrest Loan   ");
+                    System.out.println("PLZ Answer These Folllowing Questrions ");
+                    System.out.println("Your ACCOUNT On  NBP ");
+                    r = sc.next().charAt(0);
+                    if (r =='y'){
+                        System.out.println("CONGRATULATIONS! YOU  ARE ELIGIBLE  FOR LOW INTREST LOAN ");
+                        System.out.println("Answer These Following Questions  ");
+                        System.out.println("Enter your   Age    ");
+                        s = sc.nextInt();
+                        if (s>=18){
+                            System.out.println("Enter Your CNIC Number ");
+                            t = sc.nextLong();
+                            System.out.println("Enter Two Surities");
+                            System.out.println("Surities 1 CNIC Number ");
+                            u = sc.nextLong();
+                            System.out.println("Surities 2 CNIC Number ");
+                            v = sc.nextLong();
+                            System.out.println("Enter The Amount For Low Intrest Loan (100k - 500k)");
+                            w = sc.nextInt();
+                            if (w<=500000){
+                                System.out.println("CONGRATULATIONS ");
+                                System.out.println("Your Application Has Been Processed  ");
+                                System.out.println("You Will Be Called Very Soon ");
+                                System.out.println("THANKYOU VISIT OUR BANK ");
+
+                            }else {
+                                System.out.println("Sorry This is Low Intrest Loan PLZ You Can Try High Intrest Loan  ");
+                                System.out.println("THANKYOU VISIT OUR BANK ");
+                            }
+
+                        }else if (s<18){
+                            System.out.println("You  Are Not Eligible for Loan  ");
+                            System.out.println("Minimum Age is 18");
+                            System.out.println("THANKYOU VISIT OUR BANK ");
+
+                            
+                        }
+
+                    }else if (r=='N'){
+                        System.out.println("You Are Not Eligible For Loan ");
+                        System.out.println("Your Account in not Created on  NBP ");
+                        System.out.println("THANKYOU VISIT OUR BANK  ");
+                    }
+                }
+                    
+                    
+                
+                    
+                
+
+            }else if (a==3){
+                System.out.println("THANKYOU VISIT OUR BANK ");
+               
+            }
+            System.out.println("______________________________");
+            System.out.println("CREATED by M.KHALIL");
+            System.out.println("ROLL NO / 23SW 35");
+            System.out.println("DEPARTMENT Of  SOFTWARE Engineering");
+            System.exit(0);
+        }
+    }
+
+    
